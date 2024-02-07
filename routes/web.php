@@ -41,4 +41,7 @@ Route::resource('chirps', ChirpController::class)
     ->only(['index', 'store'])
     ->middleware(['auth', 'verified']);
 
+    Route::get('retour', [ChirpController::class, 'try'])->name('retour')->middleware(['auth', 'verified']);
+
+
 require __DIR__.'/auth.php';

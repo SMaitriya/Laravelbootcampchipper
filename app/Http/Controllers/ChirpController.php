@@ -20,6 +20,15 @@ class ChirpController extends Controller
         return Inertia::render('Chirps/Index', [
             //
         ]);
+
+        
+    }
+
+    public function try(): Response
+    {
+        return Inertia::render('Chirps/Retour', [
+            //
+        ]);
     }
 
     /**
