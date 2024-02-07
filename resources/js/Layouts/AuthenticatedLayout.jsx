@@ -19,16 +19,18 @@ export default function Authenticated({ auth, header, children }) {
                                     <ApplicationLogo className="block h-9 w-auto fill-current text-gray-800" />
                                 </Link>
                             </div>
+                            <h1> MAITRIYA SENDER</h1>
 
                             <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                           
                                 <NavLink href={route('dashboard')} active={route().current('dashboard')}>
-                                    Accueil
+                                    Home
                                 </NavLink>
                                 <NavLink href={route('chirps.index')} active={route().current('chirps.index')}>
-                                 Je cherche
+                                 Send messages
                                  </NavLink>
                                  <NavLink href={route('retour')} active={route().current('retour')}>
-                                 Je propose
+                                 Others
                                  </NavLink>
                             </div>
                         </div>
